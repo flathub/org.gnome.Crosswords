@@ -65,8 +65,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "branch" : "main"
+                    "url" : "https://gitlab.gnome.org/jrb/libadwaita.git",
+                    "commit" : "7768b113de0f5d4ecefe471eaba45fb22f4d7af9"
                 }
             ]
         },
