@@ -75,8 +75,9 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "dir",
-                    "path" : "../../Crosswords"
+                    "type" : "git",
+                    "path" : "https://gitlab.gnome.org/jrb/libipuz.git",
+                    "commit" : "3f506d21dacc91f9edae48b38eebf893baa62e8d"
                 }
             ]
         },
