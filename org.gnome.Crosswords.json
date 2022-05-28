@@ -16,8 +16,12 @@
         "/include",
         "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/libexec/installed-tests",
         "/man",
+        "/libexec/installed-tests",
+        "/share/applications/org.gnome.Adwaita1.Demo.desktop",
+        "/share/metainfo/org.gnome.Adwaita1.Demo.metainfo.xml",
+        "/share/icons/hicolor/symbolic/apps/org.gnome.Adwaita1.Demo-symbolic.svg",
+        "/share/icons/hicolor/scalable/apps/org.gnome.Adwaita1.Demo.svg",
         "/share/doc",
         "/share/gtk-doc",
         "/share/man",
@@ -86,6 +90,7 @@
             "name" : "crosswords",
             "buildsystem" : "meson",
             "run-tests": true,
+            "config-opts": ["-Ddevelopment=false"],
             "sources": [
                 {
                     "type": "git",
