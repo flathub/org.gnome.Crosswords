@@ -69,8 +69,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/jrb/libadwaita.git",
-                    "commit" : "7768b113de0f5d4ecefe471eaba45fb22f4d7af9"
+                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "commit" : "2b01aefb"
                 }
             ]
         },
@@ -81,7 +81,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "commit" : "3f506d21dacc91f9edae48b38eebf893baa62e8d"
+                    "commit" : "d6ab97aecfaacc8bca689ce283a8f1468df8a571"
                 }
             ]
         },
@@ -95,7 +95,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.2"
+                    "tag": "0.3.3"
                 }
             ],
             "post-install": [
