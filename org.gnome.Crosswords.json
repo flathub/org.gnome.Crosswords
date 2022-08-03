@@ -81,7 +81,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "commit" : "d6ab97aecfaacc8bca689ce283a8f1468df8a571"
+                    "commit" : "98975162a2bf8ba23371788b39c106209ddff032"
                 }
             ]
         },
@@ -95,7 +95,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.3"
+                    "tag": "0.3.4"
                 }
             ],
             "post-install": [
