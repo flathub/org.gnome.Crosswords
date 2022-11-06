@@ -1,0 +1,6 @@
+puzpy
+lxml==4.9.1
+beautifulsoup4
+requests
+regex==2022.3.2
+dateparser==1.0.0

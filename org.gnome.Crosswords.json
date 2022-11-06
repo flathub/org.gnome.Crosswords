@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "crosswords",
     "finish-args" : [
@@ -40,52 +40,17 @@
     },
     "modules" : [
         {
-            "name" : "libsass",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/libsass.git",
-                    "branch" : "meson"
-                }
-            ]
-        },
-        {
-            "name" : "sassc",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/sassc.git",
-                    "branch" : "meson"
-                }
-            ]
-        },
-        {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "a6a26cd9c35571a4e0ebacb2c6d763d44e59c045"
-                }
-            ]
-        },
-        {
             "name" : "libipuz",
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "commit" : "9e292ca5e6fd314909c293f816fa52f1302efd93"
+                    "tag" : "0.3.0"
                 }
             ]
         },
-        "python3-puzpy.json",
+        "python3-requirements.json",
         {
             "name" : "crosswords",
             "buildsystem" : "meson",
@@ -95,7 +60,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.5"
+                    "tag": "0.3.6"
                 }
             ],
             "post-install": [
