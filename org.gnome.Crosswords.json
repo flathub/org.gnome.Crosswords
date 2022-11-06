@@ -46,7 +46,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "branch" : "master"
+                    "tag" : "0.3.0"
                 }
             ]
         },
@@ -60,7 +60,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "branch": "master"
+                    "tag": "0.3.6"
                 }
             ],
             "post-install": [
