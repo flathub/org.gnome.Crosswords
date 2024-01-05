@@ -43,21 +43,6 @@
     },
     "modules" : [
         {
-            "name": "libpanel",
-            "buildsystem" : "meson",
-            "config-opts": [
-                "-Dvapi=false",
-                "-Ddocs=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libpanel.git",
-                    "tag": "libpanel-1.2"
-                }
-            ]
-        },
-        {
             "name" : "libipuz",
             "buildsystem" : "meson",
             "sources" : [
