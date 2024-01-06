@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "crosswords",
     "finish-args" : [
@@ -43,28 +43,13 @@
     },
     "modules" : [
         {
-            "name": "libpanel",
-            "buildsystem" : "meson",
-            "config-opts": [
-                "-Dvapi=false",
-                "-Ddocs=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libpanel.git",
-                    "tag": "libpanel-1.2"
-                }
-            ]
-        },
-        {
             "name" : "libipuz",
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.4.4"
+                    "tag" : "0.4.5"
                 }
             ]
         },
@@ -78,7 +63,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.11"
+                    "tag": "0.3.12"
                 }
             ],
             "post-install": [
