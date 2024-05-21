@@ -1,5 +1,4 @@
-puzpy
-lxml==4.9.1
+lxml
 beautifulsoup4
 requests
 regex==2022.3.2
