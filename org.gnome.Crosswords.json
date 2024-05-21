@@ -17,9 +17,6 @@
     ],
     "build-options" : {
         "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "build-args" : [
-            "--share=network"
-        ],
         "env" : {
             "G_MESSAGES_DEBUG" : "none",
             "RUSTFLAGS": "-C force-frame-pointers=yes",
@@ -59,11 +56,13 @@
         {
             "name" : "libipuz",
             "buildsystem" : "meson",
+            "config-opts": ["-Dbuildtype=release", "-Dsandboxed=true"],
             "sources" : [
+                "cargo-sources.json",
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.4.6.2"
+                    "tag" : "0.4.6.3"
                 }
             ]
         },
