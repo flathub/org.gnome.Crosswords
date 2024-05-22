@@ -7,7 +7,8 @@
             "name": "python3-puzpy",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"puzpy\" --no-build-isolation"
+                "mv 28e22b5efe90f2f144919e3c690d51cb38389227.tar.gz puzpy-0.2.4.tar.gz",
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"puzpy==0.2.4\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -143,10 +144,25 @@
             ]
         },
         {
+            "name": "python3-pytest-runner",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pytest-runner\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/23/2b/73982c02d28538b6a1182c0a2faf764ca6a76a6dbe89a69288184051a67b/pytest_runner-6.0.1-py3-none-any.whl",
+                    "sha256": "ea326ed6f6613992746062362efab70212089a4209c08d67177b3df1c52cd9f2"
+                }
+            ]
+        },
+        {
             "name": "python3-xdfile",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --no-deps --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xdfile@https://github.com/century-arcade/xd/archive/685604faba363aa181a6c10102da854c82fb36be.tar.gz#sha256=83c12f396d11e997a68cb4112f8873aa13c9781f9f14e0e1b32bbf9b0b275497\" --no-build-isolation"
+                "mv  685604faba363aa181a6c10102da854c82fb36be.tar.gz xdfile-1.9.0.tar.gz",
+                "pip3 install --no-deps --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xdfile==1.9.0\" --no-build-isolation"
             ],
             "sources": [
                 {
