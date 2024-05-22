@@ -1,8 +1,11 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
     "command" : "crosswords",
     "finish-args" : [
         "--device=dri",
@@ -12,6 +15,14 @@
         "--socket=wayland",
         "--env=PUZZLE_SET_PATH=/app/extensions/puzzle-sets"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/rust-stable/bin",
+        "env" : {
+            "G_MESSAGES_DEBUG" : "none",
+            "RUSTFLAGS": "-C force-frame-pointers=yes",
+            "RUST_BACKTRACE" : "1"
+        }
+    },
     "cleanup" : [
         "/bin/crossword-editor",
         "/include",
@@ -45,11 +56,13 @@
         {
             "name" : "libipuz",
             "buildsystem" : "meson",
+            "config-opts": ["-Dbuildtype=release", "-Dsandboxed=true"],
             "sources" : [
+                "cargo-sources.json",
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.4.5"
+                    "tag" : "0.4.6.3"
                 }
             ]
         },
@@ -63,7 +76,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.12"
+                    "tag": "0.3.13.2"
                 }
             ],
             "post-install": [
@@ -72,4 +85,3 @@
         }
     ]
 }
-
