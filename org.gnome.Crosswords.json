@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -30,8 +30,8 @@
         "/lib/pkgconfig",
         "/man",
         "/libexec/installed-tests",
-        "/share/applications/org.gnome.Crosswords.Editor.desktop",
         "/share/applications/org.gnome.Adwaita1.Demo.desktop",
+        "/share/applications/org.gnome.Crosswords.Editor.desktop",
         "/share/metainfo/org.gnome.Adwaita1.Demo.metainfo.xml",
         "/share/metainfo/org.gnome.Crosswords.Editor.metainfo.xml",
         "/share/icons/hicolor/symbolic/apps/org.gnome.Adwaita1.Demo-symbolic.svg",
@@ -40,6 +40,8 @@
         "/share/gtk-doc",
         "/share/man",
         "/share/pkgconfig",
+        "/share/crosswords/word-lists/broda.gresource",
+        "/share/crosswords/word-lists/wordnik.gresource",
         "*.la",
         "*.a"
     ],
@@ -62,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.4.6.3"
+                    "tag" : "6a7f3aa"
                 }
             ]
         },
@@ -76,7 +78,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.13.2"
+                    "tag": "0.3.14"
                 }
             ],
             "post-install": [
