@@ -4,31 +4,16 @@
     "build-commands": [],
     "modules": [
         {
-            "name": "python3-puzpy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mv 28e22b5efe90f2f144919e3c690d51cb38389227.tar.gz puzpy-0.2.4.tar.gz",
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"puzpy==0.2.4\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://github.com/alexdej/puzpy/archive/28e22b5efe90f2f144919e3c690d51cb38389227.tar.gz",
-                    "sha256": "d420d05fd7ad0bf1d65d59248401e1d4adae63fb826224489870ce7899a4a2e3"
-                }
-            ]
-        },
-        {
             "name": "python3-lxml",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --ignore-installed --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml==4.9.1\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lxml>=5.3.0\" --ignore-installed --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/bb/7a2c7b4f8f434aa1ee801704bf08f1e53d7b5feba3d5313ab17003477808/lxml-4.9.1.tar.gz",
-                    "sha256": "fe749b052bb7233fe5d072fcb549221a8cb1a16725c47c37e42b0b9cb3ff2c3f"
+                    "url": "https://files.pythonhosted.org/packages/e7/6b/20c3a4b24751377aaa6307eb230b66701024012c29dd374999cc92983269/lxml-5.3.0.tar.gz",
+                    "sha256": "4e109ca30d1edec1ac60cdbe341905dc3b8f55b16855e03a54aaf59e51ec8c6f"
                 }
             ]
         },
@@ -41,13 +26,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/16/e3/4ad79882b92617e3a4a0df1960d6bce08edfb637737ac5c3f3ba29022e25/soupsieve-2.3.2.post1-py3-none-any.whl",
-                    "sha256": "3b2503d3c7084a42b1ebd08116e5f81aadfaea95863628c80a3b774a11b7c759"
+                    "url": "https://files.pythonhosted.org/packages/b1/fe/e8c672695b37eecc5cbf43e1d0638d88d66ba3a44c4d321c796f4e59167f/beautifulsoup4-4.12.3-py3-none-any.whl",
+                    "sha256": "b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9c/d8/909c4089dbe4ade9f9705f143c9f13f065049a9d5e7d34c828aefdd0a97c/beautifulsoup4-4.11.1-py3-none-any.whl",
-                    "sha256": "58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30"
+                    "url": "https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl",
+                    "sha256": "e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9"
                 }
             ]
         },
@@ -60,28 +45,28 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6f/de/5be2e3eed8426f871b170663333a0f627fc2924cc386cd41be065e7ea870/urllib3-1.26.12-py2.py3-none-any.whl",
-                    "sha256": "b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
+                    "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
+                    "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
-                    "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
+                    "url": "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz",
+                    "sha256": "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/db/51/a507c856293ab05cdc1db77ff4bc1268ddd39f29e7dc4919aa497f0adbec/charset_normalizer-2.1.1-py3-none-any.whl",
-                    "sha256": "83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"
+                    "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+                    "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1d/38/fa96a426e0c0e68aabc68e896584b83ad1eec779265a028e156ce509630e/certifi-2022.9.24-py3-none-any.whl",
-                    "sha256": "90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"
+                    "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+                    "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ca/91/6d9b8ccacd0412c08820f72cebaa4f0c0441b5cda699c90f618b6f8a1b42/requests-2.28.1-py3-none-any.whl",
-                    "sha256": "8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
+                    "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
+                    "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df"
                 }
             ]
         },
@@ -89,13 +74,13 @@
             "name": "python3-regex",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"regex==2022.3.2\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"regex>=2022.3.2\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4f/17/21e7195da87bcdbdd4ec32fdfdc87ccd5cf97b0a18e0f08ecacbaefca284/regex-2022.3.2.tar.gz",
-                    "sha256": "79e5af1ff258bc0fe0bdd6f69bc4ae33935a898e3cbefbbccf22e88a27fa053b"
+                    "url": "https://files.pythonhosted.org/packages/8e/5f/bd69653fbfb76cf8604468d3b4ec4c403197144c7bfe0e6a5fc9e02a07cb/regex-2024.11.6.tar.gz",
+                    "sha256": "7ab159b063c52a0333c884e4679f8d7a85112ee3078fe3d9004b2dd875585519"
                 }
             ]
         },
@@ -103,43 +88,38 @@
             "name": "python3-dateparser",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"dateparser==1.0.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"dateparser>=1.0.0\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/61/1e/3c4bf37f8d6ceba07ae357e70eedd21bd15a032b460bab6b12a58c0fce9d/tzdata-2022.6-py2.py3-none-any.whl",
-                    "sha256": "04a680bdc5b15750c39c12a448885a51134a27ec9af83667663f0b3a1bf3f342"
+                    "url": "https://files.pythonhosted.org/packages/a4/29/db12aa4dda81580be1999824a689bd52aa40061fc12c9ccdc3feab5ea718/dateparser-1.2.0-py2.py3-none-any.whl",
+                    "sha256": "0b21ad96534e562920a0083e97fd45fa959882d4162acc358705144520a35830"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/eb/73/3eaab547ca809754e67e06871cff0fc962bafd4b604e15f31896a0f94431/pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl",
-                    "sha256": "8314c9692a636c8eb3bda879b9f119e350e93223ae83e70e80c31675a0fdc1a6"
+                    "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+                    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/31/b7/3bc2c1868f27677139b772e4fde95265b93151912fd90eb874827943bfcf/tzlocal-4.2-py3-none-any.whl",
-                    "sha256": "89885494684c929d9191c57aa27502afc87a579be5cdd3225c77c463ea043745"
+                    "url": "https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl",
+                    "sha256": "31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/85/ac/92f998fc52a70afd7f6b788142632afb27cd60c8c782d1452b7466603332/pytz-2022.6-py2.py3-none-any.whl",
-                    "sha256": "222439474e9c98fced559f1709d89e6c9cbf8d79c794ff3eb9f8800064291427"
+                    "url": "https://files.pythonhosted.org/packages/8e/5f/bd69653fbfb76cf8604468d3b4ec4c403197144c7bfe0e6a5fc9e02a07cb/regex-2024.11.6.tar.gz",
+                    "sha256": "7ab159b063c52a0333c884e4679f8d7a85112ee3078fe3d9004b2dd875585519"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl",
-                    "sha256": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
+                    "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+                    "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4f/17/21e7195da87bcdbdd4ec32fdfdc87ccd5cf97b0a18e0f08ecacbaefca284/regex-2022.3.2.tar.gz",
-                    "sha256": "79e5af1ff258bc0fe0bdd6f69bc4ae33935a898e3cbefbbccf22e88a27fa053b"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/78/c4/b5ddc3eeac974d85055d88c1e6b62cc492fc1a93dbe3b66a45a756a7b807/dateparser-1.0.0-py2.py3-none-any.whl",
-                    "sha256": "17202df32c7a36e773136ff353aa3767e987f8b3e27374c39fd21a30a803d6f8"
+                    "url": "https://files.pythonhosted.org/packages/97/3f/c4c51c55ff8487f2e6d0e618dba917e3c3ee2caae6cf0fbb59c9b1876f2e/tzlocal-5.2-py3-none-any.whl",
+                    "sha256": "49816ef2fe65ea8ac19d19aa7a1ae0551c834303d5014c6d5a62e4cbda8047b8"
                 }
             ]
         },
@@ -158,10 +138,25 @@
             ]
         },
         {
+            "name": "python3-puzpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv 28e22b5efe90f2f144919e3c690d51cb38389227.tar.gz puzpy-0.2.4.tar.gz",
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"puzpy==0.2.4\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://github.com/alexdej/puzpy/archive/28e22b5efe90f2f144919e3c690d51cb38389227.tar.gz",
+                    "sha256": "d420d05fd7ad0bf1d65d59248401e1d4adae63fb826224489870ce7899a4a2e3"
+                }
+            ]
+        },
+        {
             "name": "python3-xdfile",
             "buildsystem": "simple",
             "build-commands": [
-                "mv  685604faba363aa181a6c10102da854c82fb36be.tar.gz xdfile-1.9.0.tar.gz",
+                "mv 685604faba363aa181a6c10102da854c82fb36be.tar.gz xdfile-1.9.0.tar.gz",
                 "pip3 install --no-deps --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xdfile==1.9.0\" --no-build-isolation"
             ],
             "sources": [
