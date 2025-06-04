@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -64,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "6a7f3aa"
+                    "tag" : "0.5.2"
                 }
             ]
         },
@@ -78,7 +78,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.14"
+                    "tag": "0.3.15"
                 }
             ],
             "post-install": [
