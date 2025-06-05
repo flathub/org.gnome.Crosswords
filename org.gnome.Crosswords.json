@@ -13,7 +13,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--env=PUZZLE_SET_PATH=/app/extensions/puzzle-sets"
+        "--env=PUZZLE_SET_PATH=/app/share/crosswords/puzzle-sets/:/app/extensions/puzzle-sets"
     ],
     "build-options" : {
         "append-path" : "/usr/lib/sdk/rust-stable/bin",
