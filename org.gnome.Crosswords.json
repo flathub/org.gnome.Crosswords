@@ -90,7 +90,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.16"
+                    "tag": "0.3.16.1"
                 }
             ],
             "post-install": [
