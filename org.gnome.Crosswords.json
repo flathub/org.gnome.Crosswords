@@ -56,6 +56,18 @@
     },
     "modules" : [
         {
+            "name": "blueprint-compiler",
+            "buildsystem": "meson",
+            "cleanup": ["*"],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
+                    "tag": "v0.18.0"
+                }
+            ]
+        },
+        {
             "name" : "libipuz",
             "buildsystem" : "meson",
             "config-opts": ["-Dbuildtype=release", "-Dsandboxed=true"],
@@ -64,7 +76,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.5.2"
+                    "tag" : "0.5.3"
                 }
             ]
         },
@@ -78,7 +90,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.15"
+                    "tag": "0.3.16.1"
                 }
             ],
             "post-install": [
