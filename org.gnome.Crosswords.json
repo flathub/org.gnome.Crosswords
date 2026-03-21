@@ -79,16 +79,20 @@
             "buildsystem" : "meson",
             "run-tests": true,
             "config-opts": ["-Ddevelopment=false"],
+            "post-install": [
+                "install -d /app/extensions"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
                     "tag": "0.3.17",
                     "commit": "3710a1538113e15dd4233587c78247c548efe2e0"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
-            ],
-            "post-install": [
-                "install -d /app/extensions"
             ]
         }
     ]
