@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Crosswords",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -56,30 +56,23 @@
     },
     "modules" : [
         {
-            "name": "blueprint-compiler",
-            "buildsystem": "meson",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
-                    "tag": "v0.18.0"
-                }
-            ]
-        },
-        {
             "name" : "libipuz",
             "buildsystem" : "meson",
-            "config-opts": ["-Dbuildtype=release", "-Dsandboxed=true"],
+            "config-opts": [
+                "-Dbuildtype=release",
+                "-Dsandboxed=true"
+            ],
             "sources" : [
                 "cargo-sources.json",
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/libipuz.git",
-                    "tag" : "0.5.4"
+                    "tag" : "0.5.4",
+                    "commit" : "5c2c741fd81739f29c2af88460f554b64ffad9f9"
                 }
             ]
         },
+        "python3-six.json",
         "python3-requirements.json",
         {
             "name" : "crosswords",
@@ -90,7 +83,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jrb/crosswords.git",
-                    "tag": "0.3.17"
+                    "tag": "0.3.17",
+                    "commit": "3710a1538113e15dd4233587c78247c548efe2e0"
                 }
             ],
             "post-install": [
